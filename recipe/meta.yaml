@@ -1,5 +1,5 @@
 {% set name = "lixtools" %}
-{% set version = "2021.6.21.0" %}
+{% set version = "2021.8.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b11001a711d5e024f5ebb9018e4265f8cd236324fc3800fd224a62a8f2014c54
+  sha256: 2cac67e2aa542a5581ac0a8d06f359a2f78abcfe3a0eb7f96819279b32412113
 
 build:
   number: 0
@@ -20,16 +20,21 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - dask
+    - ipython
     - ipywidgets
     - matplotlib-base
     - numpy
+    # - opencv
     - openpyxl >=3
     # - opentrons  # per Lin Yang, that dependendency is not needed for the main code base, as it's used separately.
     - pandas
     - pillow
     - py4xs
     - python-barcode
+    # - pyzbar
     - qrcode
+    - scipy
 
 test:
   imports:
