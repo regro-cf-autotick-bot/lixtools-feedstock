@@ -24,7 +24,7 @@ requirements:
     - matplotlib-base
     - numpy
     - openpyxl >=3
-    - opentrons
+    # - opentrons  # per Lin Yang, that dependendency is not needed for the main code base, as it's used separately.
     - pandas
     - pillow
     - py4xs
@@ -39,7 +39,7 @@ test:
     - lixtools.mailin
     - lixtools.modeling
     - lixtools.notebooks
-    - lixtools.ot2
+    # - lixtools.ot2  # per Lin Yang, that dependendency is not needed for the main code base, as it's used separately.
     - lixtools.webcam
 
   commands:
