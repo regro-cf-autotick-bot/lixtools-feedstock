@@ -40,7 +40,7 @@ test:
     - lixtools.modeling
     - lixtools.notebooks
     # - lixtools.ot2  # per Lin Yang, that dependendency is not needed for the main code base, as it's used separately.
-    - lixtools.webcam
+    # - lixtools.webcam  # see the comment above.
 
   commands:
     - python -c "import os, pkg_resources; assert os.path.isfile(pkg_resources.resource_filename('lixtools', 'plate_label_template.html'))"
