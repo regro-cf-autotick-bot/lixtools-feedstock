@@ -20,16 +20,21 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - dask
+    - ipython
     - ipywidgets
     - matplotlib-base
     - numpy
+    # - opencv
     - openpyxl >=3
     # - opentrons  # per Lin Yang, that dependendency is not needed for the main code base, as it's used separately.
     - pandas
     - pillow
     - py4xs
     - python-barcode
+    # - pyzbar
     - qrcode
+    - scipy
 
 test:
   imports:
