@@ -32,6 +32,7 @@ requirements:
     - pandas
     - pillow
     - py4xs >=2022.6.3.0
+    - pymcr
     - python-barcode
     # - pyzbar
     - qrcode
