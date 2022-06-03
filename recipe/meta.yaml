@@ -31,11 +31,12 @@ requirements:
     # - opentrons  # per Lin Yang, that dependendency is not needed for the main code base, as it's used separately.
     - pandas
     - pillow
-    - py4xs
+    - py4xs >=2022.6.3.0
     - python-barcode
     # - pyzbar
     - qrcode
     - scipy
+    - tomopy
 
 test:
   imports:
