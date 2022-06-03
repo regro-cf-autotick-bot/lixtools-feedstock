@@ -36,6 +36,7 @@ requirements:
     # - pyzbar
     - qrcode
     - scipy
+    - seaborn
     - tomopy
 
 test:
