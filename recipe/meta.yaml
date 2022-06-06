@@ -32,7 +32,6 @@ requirements:
     - pandas
     - pillow
     - py4xs >=2022.6.3.0
-    - pymcr
     - python-barcode
     # - pyzbar
     - qrcode
@@ -47,7 +46,7 @@ test:
     - lixtools.hdf
     - lixtools.mailin
     - lixtools.modeling
-    - lixtools.notebooks
+    # - lixtools.notebooks  # per Lin Yang, this import includes an experimental package, not ready for production yet.
     # - lixtools.ot2  # per Lin Yang, that dependendency is not needed for the main code base, as it's used separately.
     # - lixtools.webcam  # see the comment above.
 
