@@ -1,5 +1,5 @@
 {% set name = "lixtools" %}
-{% set version = "2022.7.25.0" %}
+{% set version = "2022.7.30.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5bba59da56e61158d09d4fa1c49b9014ed24ed58172fd86cb1c1177911f9d471
+  sha256: 4babea839d72113c3ebf586fa1cdadf7c576c999f9e23ad39dd609c86e53c7f2
 
 build:
   number: 0
