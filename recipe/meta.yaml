@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 92ce01162702904804656717d7acf92e75bd5233db3e9f6f511e18a5309ef55d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - dask
     - fast-histogram
     - ipython
@@ -40,6 +40,8 @@ requirements:
     - tomopy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - lixtools
     - lixtools.atsas
